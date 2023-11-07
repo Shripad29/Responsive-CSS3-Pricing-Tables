@@ -1,0 +1,68 @@
+body {
+  font-family: "Tahoma", sans-serif;
+  background: rgb(71, 71, 71);
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.priceTable {
+  background: white;
+  color: #555;
+  list-style-type: none;
+  border: 1px solid #555;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+}
+
+.priceTable:hover,
+.priceTable.best {
+  box-shadow: 0 10px 15px 0 #000;
+}
+
+.priceTable .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.priceTable .header.header-green {
+  background: #425df5;
+}
+
+.priceTable li {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.priceTable .emph {
+  background-color: #f4f4f4;
+  font-size: 20px;
+}
+
+.button {
+  background: #425df5;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media (max-width: 700px) {
+  .column {
+    width: 100%;
+  }
+}
